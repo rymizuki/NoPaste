@@ -1,0 +1,14 @@
+{
+  "name": "NoPaste",
+  "version": "0.0.1",
+  "main": "public/css/main.min.css",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "components"
+  ],
+  "dependencies": {
+    "backbone": "~1.0.0",
+    "underscore": "~1.4.4"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "name": "NoPaste",
+  "version": "0.0.1",
+  "private": true,
+  "dependencies": {
+    "grunt": "~0.4.1",
+    "grunt-cli": "~0.1.9",
+    "grunt-contrib-watch": "~0.4.4",
+    "bower": "~0.9.2",
+    "grunt-contrib-concat": "~0.3.0",
+    "grunt-concat-css": "~0.1.0",
+    "grunt-contrib-copy": "~0.4.1",
+    "grunt-contrib-cssmin": "~0.6.1",
+    "grunt-contrib-uglify": "~0.2.2"
+  }
+}
