@@ -16,7 +16,7 @@ requires 'DBI';
 requires 'DBIx::Sunny';
 requires 'DBD::mysql';
 
-requires 'https://github.com/rymizuki/p5-Amon2-Plugin-Web-Validator/tarball/master';
+requires 'git@github.com:rymizuki/p5-Amon2-Plugin-Web-Validator.git';
 
 on 'test' => sub {
     requires 'Test::More', '0.98';

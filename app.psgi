@@ -115,7 +115,7 @@ __PACKAGE__->template_options(
             my $fname = shift;
             my $c = Amon2->context;
             if (not exists $static_file_cache{$fname}) {
-                my $fullpath = File::Spec->catfile($c->base_dir(), $fname);
+                my $fullpath = File::Spec->catfile($c->base_dir(), 'public', $fname);
                 $static_file_cache{$fname} = (stat $fullpath)[9];
             }
             return $c->uri_for(
@@ -128,6 +128,12 @@ __PACKAGE__->template_options(
 );
 
 __PACKAGE__->enable_middleware('ReverseProxy');
+__PACKAGE__->enable_middleware(
+    'Static' => (
+        path => qr{^/(css|js|img|font)},
+        root => './public/'
+    ),
+);
 
 __PACKAGE__->to_app();
 
