@@ -16,7 +16,7 @@ requires 'DBI';
 requires 'DBIx::Sunny';
 requires 'DBD::mysql';
 
-requires 'git@github.com:rymizuki/p5-Amon2-Plugin-Web-Validator.git';
+requires 'git://github.com/rymizuki/p5-Amon2-Plugin-Web-Validator';
 
 on 'test' => sub {
     requires 'Test::More', '0.98';
